@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>position-center</title>
+	<style>
+		div{
+			/*绝对定位 margin 左右auto 不能让盒子水平居中*/
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			width: 200px;
+			height: 200px;
+			background-color: pink;
+			margin: auto;
+			margin-left: -100px;
+			margin-top: -100px;
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

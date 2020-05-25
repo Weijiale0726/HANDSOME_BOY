@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>微信导航栏</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		li{
+			list-style-type: none;
+
+		}
+		a{
+			text-decoration: none;
+		}
+		body{
+			background: url(images/vx.png) repeat-x;
+		}
+		.nav{
+			width: 1460px;
+			height: 80px;
+		}
+		.nav img{
+			float: left;
+			margin-top: 10px;
+			margin-left: 245px;
+			margin-right: 89px;
+		}
+		.nav ul li{
+			float: left;
+			margin-left: 20px;
+			margin-top: 20px;
+		}
+		.nav ul li a{
+			display: inline-block;
+			height: 33px;
+			line-height: 33px;
+			color: #fff;
+			font-family: 微软雅黑;
+			font-size: 14px;
+		}
+		.nav .first-a{
+			background: url(images/to.png) no-repeat;
+			padding-left: 10px;
+		}
+		.nav .first-a span{
+			display: inline-block;
+			height: 33px;
+			padding-right: 10px;
+			background: url(images/to.png)no-repeat right top;
+		}
+		.nav .second-a:hover{
+			background: url(images/ao.png) no-repeat;
+			padding-left: 10px;
+		}
+		.nav .second-a:hover span{
+			display: inline-block;
+			height: 33px;
+			padding-right: 10px;
+			background: url(images/ao.png)no-repeat right top;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="nav">
+		<img src="images/vx-logo_03.jpg" alt="">
+		<ul>
+			<li><a href="#" class="first-a"><span>首页</span></a></li>
+			<li><a href="#" class="second-a"><span>帮助与反馈</span></a></li>
+			<li><a href="#" class="second-a"><span>公众平台</span></a></li>
+			<li><a href="#" class="second-a"><span>开放平台</span></a></li>
+			<li><a href="#" class="second-a"><span>微信支付</span></a></li>
+			<li><a href="#" class="second-a"><span>微信广告</span></a></li>
+			<li><a href="#" class="second-a"><span>企业微信</span></a></li>
+			<li><a href="#" class="second-a"><span>表情开放平台</span></a></li>
+			<li><a href="#" class="second-a"><span>微信网页版</span></a></li>
+		</ul>
+	</div>
+</body>
+</html>

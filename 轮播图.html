@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>轮播图</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		a{
+			text-decoration: none;
+		}
+		li{
+			list-style-type: none;
+		}
+		.taobao	{
+			position: relative;
+			width: 520px;
+			height: 280px;
+			background-color: pink;
+			margin: 100px auto;
+
+		}
+		.arr-l,
+		.arr-r{
+			/*只能用定位*/
+			position: absolute;
+			/*绝对定位的盒子 无需转换 直接给大小就好*/
+			width: 20px;
+			height: 30px;
+			background: rgba(0,0,0,.2);
+			color: #fff;
+			line-height: 30px;
+		}
+		.arr-l{
+			left: 0;
+			top: 50%;
+			margin-top: -15px;
+			/*右上角*/
+			border-top-right-radius: 20px;
+			/*右下角*/
+			border-bottom-right-radius:20px;
+		}
+		.arr-r{
+			right: 0;
+			top: 50%;
+			margin-top: -15px;
+			/*左上角*/
+			border-top-left-radius: 20px;
+			/*左下角*/
+			border-bottom-left-radius: 20px;
+		}
+		.arr-l:hover,
+		.arr-r:hover{
+			background: rgba(0,0,0,.4);
+		}
+		.circle{
+			position: absolute;
+			bottom: 15px;
+			left: 50%;
+			margin-left: -35px;
+			width: 70px;
+			height: 13px;
+			background-color: pink;
+			border-radius: 7px;
+			background: rgba(255,255,255,.3);
+		}
+		.circle li{
+			float: left;
+			width: 8px;
+			height: 8px;
+			background-color: #fff;
+			border-radius: 50%;
+			margin: 3px;
+			cursor: pointer;
+		}
+		/*current 当前的意思*/
+		.circle .current{
+			background-color: #ff5000;
+		}
+	</style>
+</head>
+<body>
+	<div class="taobao">
+		<!-- 左按钮 -->
+		<a href="#" class="arr-l">&lt;</a>
+		<!-- 右按钮 -->
+		<a href="#" class="arr-r">&gt;</a>
+		<!-- 图片 -->
+		<img src="images/taobao.jpg" alt="">
+		<!-- 小圆点 -->
+		<ul class="circle">
+			<li></li>
+			<li class="current"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+
+</body>
+</html>

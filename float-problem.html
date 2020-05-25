@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>float-problem</title>
+	<style>
+		.clearfix:before,
+		.chearfix:after{
+			content: "";
+			display: table;
+		}
+		.clearfix:after{
+			clear: both;
+		}
+		.clearfix{
+			*zoom: 1;
+		}
+
+		.one{
+			width: 400px;
+			background-color: pink;
+
+		}
+
+		.damao{
+			width: 100px;
+			height: 100px;
+			float: left;
+			background-color: skyblue;
+
+		}
+
+		.ermao{
+			width: 100px;
+			height: 150px;
+			float: left;
+			background-color: orange;
+		}
+
+		.two
+		{
+			width: 500px;
+			height: 200px;
+			background-color: black;
+			float: left;
+		}
+	</style>
+
+
+
+
+</head>
+
+
+
+
+<body>
+	 <div class="one clearfix" >
+	 	<div class="damao"></div>
+	 	<div class="ermao"></div>
+	 </div>
+	 <div class="two"></div>
+</body>
+</html>

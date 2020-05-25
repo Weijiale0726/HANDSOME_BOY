@@ -1,0 +1,291 @@
+css 初始化代码 css reset*/
+/*清除元素默认内外边距*/
+*{
+	margin: 0;
+	padding: 0;
+}
+/*去掉button默认边框*/
+button{
+	border: none;
+}
+/*取消轮廓线*/
+input{
+	outline: none;
+}
+body{
+	background-color: #f3f5f7;
+}
+/*清除列表样式*/
+li{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after{
+	content: "";
+	display: table;
+}
+.clearfix:after{
+	clear: both;
+}
+.clearfix{
+	*zoom: 1;
+}
+
+/*版心 1200 水平居中*/
+.w{
+	width: 1200px;
+	margin: auto;
+}
+
+/*header start*/
+.header{
+	height: 42px;
+	margin: 30px auto;
+	background-color: #f3f5f7;
+}
+/*logo*/
+.logo{
+	float: left;
+	margin-right: 60px;
+}
+/*nav start*/
+.header .nav{
+	float: left;
+}
+.header .nav li{
+	float: left;
+}
+.header .nav li a{
+	display: block;
+	height: 40px;
+	padding: 0 10px;
+	margin-right: 20px;
+	line-height: 40px;
+	text-decoration: none;
+	color: #050505;
+	font-family: 微软雅黑;
+	font-size: 18px; 
+}
+.header .nav li a:hover{
+	border-bottom: 2px solid #00a4ff;
+}
+/*.header .search*/
+.search{
+	float: left;
+	margin-left: 70px;
+}
+.search input{
+	float: left;
+	width: 340px;
+	height: 40px;
+	border: 1px solid #00a4ff;
+	border-right: none;
+	padding-left: 20px;
+	color: #ccc;
+}
+.search button
+{
+	float: left;
+	width: 50px;
+	height: 42px;
+	background: url(images/btn_03.png) repeat-y;
+
+}
+/*header user*/
+.user
+{
+	float: left;
+	margin-left: 30px;
+	font-family: 微软雅黑;
+	font-size: 14px;
+	color: #666666;
+}
+.user img{
+		vertical-align: middle;
+}
+/*banner*/
+.banner{
+	height: 420px;
+	background: #1c036c url(images/banner2.png) no-repeat top center;
+}
+.subnav{
+	width: 150px;
+	height: 420px;
+	padding: 0 20px;
+	background-color: rgba(0,0,0,0.3);
+	float: left;
+}
+.subnav li {
+	height: 45px;
+	line-height: 45px;
+}
+.subnav li a{
+	font-family: 微软雅黑;
+	font-size: 14px;
+	color: #ffffff;
+	text-decoration: none;
+}
+.subnav li a:hover{
+	color: #00b4ff;
+}
+.subnav li a span{
+	float: right;
+}
+/*course*/
+.course{
+	/*因为course 子盒子有了浮动，这就不会外边距塌陷的问题*/
+	width: 228px;
+	height: 300px;
+	background-color: #ffffff;
+	float: right;
+	margin-top: 50px;
+}
+.course .hd{
+	height: 48px;
+	background-color: #9bceea;
+	line-height: 48px;
+	font-family: 微软雅黑;
+	font-size: 18px;
+	font-weight: 700;
+	color: #FFF;
+	text-align: center;
+}
+.course .hb{
+	/*没宽度的盒子给padding不会撑开盒子*/
+	padding: 0 15px;
+}
+.hb ul{
+	padding-top: 10px;
+}
+.hb li{
+	height: 50px;
+	margin-top: 10px;
+	border-bottom: 1px solid #ccc ;
+}
+.hb h4{
+	font-family: 方正兰亭超细黑简;
+	font-size: 16px;
+	color: #4e4e4e;
+}
+.hb p{
+	font-family: 方正兰亭超细黑简;
+	font-size: 12px;
+	color: #a5a5a5;
+}
+.all{
+	display: block;
+	height: 38px;
+	border: 1px solid #00a4ff;
+	margin-top: 10px;
+	line-height: 38px;
+	text-align: center;
+	font-size: 16px;
+	font-family: 微软雅黑;
+	color: #00a4ff;
+	font-weight: 700;
+}
+.all:hover{
+	background-color: #00a4ff;
+	color: #fff;
+}
+/*course end*/
+/*good start*/
+.goods{
+	height: 60px;
+	line-height: 60px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.2);
+	background-color: #ffffff;
+	margin-top: 10px;
+}
+.goods h3{
+	float: left;
+	font-size: 16px;
+	color: #00a4ff;
+	margin-left: 30px;
+}
+.goods .good-items{
+	float: left;
+	margin-left: 35px;
+	color: #bfbfbf;
+}
+.goods .good-items a{
+	font-size: 16px;
+	color: #050505;
+	padding: 0 30px;
+}
+.mod{
+	float: right;
+	margin-right: 25px;
+	font-size: 14px;
+	color: #00a4ff;
+	font-family: 微软雅黑;
+}
+/*goods end*/
+/*box start*/
+.box {
+	margin-top: 15px;
+
+}
+.box .box-hd{
+	height: 60px;
+	line-height: 60px;
+	background-color: #f3f5f7;
+}
+.box-hd h3{
+	float: left;
+	font-family: 微软雅黑;
+	font-size: 20px;
+	color: #494949;
+	font-weight: 400;
+}
+.box-hd a{
+	float: right;
+	font-family: 微软雅黑;
+	font-size: 12px;
+	color: #a5a5a5;
+	margin-right: 25px;
+}
+.box-bd{
+	/*这个盒子一定不要给高度 因为我们可能放一排 或者不止*/
+	/*box-bd 宽度超过了版心 1200事儿可以的。就解决了问题*/
+	width: 1215px;
+}
+.box-bd li{
+	float: left;
+	width: 228px;
+	height: 270px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	background-color: #fff;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+}
+.box-bd li img{
+	width: 100%;
+}
+.box li h4{
+	margin: 20px;
+	font-size: 14px;
+	color: #050505;
+	font-weight: 400;
+}
+.box li p{
+	margin: 0 20px;
+	font-size: 12px;
+	color: #999;
+
+}
+.box p span{
+	color: orange;
+}
+/*box end
+
+/*footer*/
+.footer{
+	height: 415px;
+	background-color: pink;
+}

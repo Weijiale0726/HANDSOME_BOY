@@ -1,0 +1,11 @@
+#pink{
+	color: pink;
+	font: italic 700 50px "微软雅黑";
+}
+
+span{
+	color: yellow;
+}
+body{
+	font-size: 16px;
+}
